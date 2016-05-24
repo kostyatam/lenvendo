@@ -1,0 +1,138 @@
+.block {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.block__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+.block__text {
+  font-size: 16px;
+}
+.block_state_red {
+  background-color: rgba(242,95,92,0.3);
+}
+.block_state_green {
+  background-color: rgba(112,193,179,0.3);
+}
+.block_state_selected:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: #247ba0;
+  top: 0;
+  left: 0;
+}
+.blocks-list {
+  width: 100%;
+  list-style: none;
+  display: block;
+}
+.blocks-list__item {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.blocks-list__item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.popup-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+.delete-popup {
+  border-radius: 3px;
+  margin: 50px auto 0;
+  padding: 10px;
+  background: #fff;
+  width: 70%;
+}
+.delete-popup__text {
+  margin-bottom: 15px;
+}
+.delete-popup__btn-group {
+  text-align: right;
+}
+.delete-popup__btn {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  text-align: center;
+}
+.delete-popup__btn_delete {
+  background-color: rgba(242,95,92,0.5);
+}
+.delete-popup__btn_cancel {
+  background-color: rgba(36,123,160,0.5);
+}
+.panel {
+  display: block;
+  padding: 10px;
+}
+.panel__item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid #ccc;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+  padding: 5px;
+  min-width: 32px;
+  text-align: center;
+  position: relative;
+}
+.panel__item_red {
+  background-color: rgba(242,95,92,0.3);
+}
+.panel__item_green {
+  background-color: rgba(112,193,179,0.3);
+}
+.panel__item_selected:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: #247ba0;
+  top: 0;
+  left: 0;
+}
+.panel__item_add {
+  cursor: pointer;
+}
+.panel:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map*/

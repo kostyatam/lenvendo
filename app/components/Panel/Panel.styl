@@ -1,0 +1,39 @@
+.panel
+  display block
+  padding 10px
+
+  &__item
+    user-select none
+    border 1px solid #ccc
+    display inline-block
+    font-size 22px
+    line-height 1
+    padding 5px
+    min-width 32px
+    text-align center
+    position relative
+
+    &_red
+      background-color rgba(#F25F5C, .3)
+
+    &_green
+      background-color rgba(#70C1B3, .3)
+
+    &_selected
+      &:after
+        content ''
+        position absolute
+        height 100%
+        width 5px
+        background-color rgba(#247BA0)
+        top 0
+        left 0
+
+    &_add
+      cursor pointer
+
+
+  &:after
+    content ''
+    display block
+    clear both
